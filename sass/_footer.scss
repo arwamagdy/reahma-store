@@ -1,0 +1,185 @@
+.contact-section {
+    padding: 50px;
+    background-color: #f0f4f8; /* لون خلفية خفيف */
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    transition: box-shadow 0.3s;
+    text-align: center;
+  
+    &:hover {
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    }
+  
+    h2 {
+      margin-bottom: 30px;
+      color: #004080; /* لون العنوان */
+      font-size: 36px; /* حجم أكبر للعنوان */
+      font-weight: 700; /* وزن خط أكثر سمكًا */
+      text-transform: uppercase; /* جعل العنوان كبير */
+    }
+  
+    p {
+      margin-bottom: 30px;
+      color: #555; /* لون النص العادي */
+      font-size: 16px; /* حجم النص العادي */
+    }
+  
+    form {
+      max-width: 600px;
+      margin: 0 auto;
+  
+      input,
+      textarea {
+        width: 100%;
+        padding: 15px;
+        margin: 10px 0;
+        border: 1px solid #d1d1d1;
+        border-radius: 5px;
+        font-size: 16px;
+        transition: border-color 0.3s;
+  
+        &::placeholder {
+          color: #aaa; /* لون النص في الحقل */
+          font-style: italic; /* جعل النص مائل */
+        }
+  
+        &:focus {
+          border-color: #004080; /* لون الحدود عند التركيز */
+          outline: none; /* إزالة الحدود الافتراضية */
+        }
+      }
+  
+      button {
+        background-color: #004080; /* لون زر */
+        color: white; /* لون النص في الزر */
+        padding: 15px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: background-color 0.3s, transform 0.2s;
+  
+        &:hover {
+          background-color: #003366; /* لون الزر عند التحويم */
+          transform: scale(1.05); /* تأثير التحويم */
+        }
+      }
+    }
+  
+    .icon {
+      font-size: 40px; /* حجم الأيقونة */
+      color: #004080; /* لون الأيقونة */
+      margin: 10px 0; /* مساحة حول الأيقونة */
+    }
+  }
+  .footer {
+    background-color: #004080; /* لون الخلفية */
+    color: white; /* لون النص */
+    text-align: center; /* محاذاة النص للوسط */
+    position: relative; /* لتسهيل التنسيق */
+    overflow: hidden;
+  
+    h3 {
+      margin-bottom: 20px;
+      font-size: 24px; /* حجم الخط */
+      font-weight: 600; /* وزن خط سميك */
+      text-transform: uppercase; /* جعل النص كبير */
+    }
+  
+    .links {
+      display: flex; /* استخدام الفليكس لجعل الروابط بجانب بعضها */
+      justify-content: center; /* محاذاة الروابط في الوسط */
+      flex-wrap: wrap; /* تفعيل التفاف الروابط */
+      margin-bottom: 30px;
+  
+      a {
+        color: white; /* لون الروابط */
+        margin: 0 15px; /* مساحة بين الروابط */
+        font-size: 16px; /* حجم الخط */
+        text-decoration: none; /* إزالة الخط السفلي */
+        position: relative; /* لتسهيل إضافة التأثيرات */
+        transition: color 0.3s; /* تأثير على اللون عند التحويم */
+  
+        &:hover {
+          color: #a6cdde; /* لون عند التحويم */
+        }
+  
+        &::after {
+          content: "";
+          display: block;
+          width: 0;
+          height: 2px;
+          background: #a6cdde; /* لون خط تحت الرابط */
+          transition: width 0.3s; /* تأثير على عرض الخط */
+          position: absolute;
+          bottom: -5px;
+          left: 0;
+        }
+  
+        &:hover::after {
+          width: 100%; /* توسيع الخط عند التحويم */
+        }
+      }
+    }
+  
+    .social-icons {
+      margin-top: 20px; /* مساحة فوق الأيقونات */
+  
+      i {
+        font-size: 24px; /* حجم الأيقونات */
+        margin: 0 10px; /* مساحة بين الأيقونات */
+        color: white; /* لون الأيقونات */
+        transition: color 0.3s; /* تأثير على اللون عند التحويم */
+  
+        &:hover {
+          color: #a6cdde; /* لون عند التحويم */
+        }
+      }
+    }
+  
+    .copy {
+      margin-top: 20px; /* مساحة فوق نص حقوق الطبع */
+      font-size: 14px; /* حجم النص */
+      color: #d1d1d1; /* لون نص حقوق الطبع */
+    }
+  }
+  .whatsapp-button {
+    display: inline-flex;
+    align-items: center;
+    background-color: #25d366; /* لون زر WhatsApp */
+    color: white; /* لون النص */
+    padding: 10px 20px; /* مساحة داخلية */
+    border-radius: 5px; /* زوايا مدورة */
+    text-decoration: none; /* إزالة الخط السفلي */
+    font-size: 18px; /* حجم الخط */
+    position: fixed; /* مثبت في مكانه */
+    bottom: 20px; /* المسافة من الأسفل */
+    right: 20px; /* المسافة من اليمين */
+    transition: background-color 0.3s; /* تأثير عند التحويم */
+    z-index: 1000; /* لضمان ظهور الزر فوق العناصر الأخرى */
+  }
+  
+  .whatsapp-button i {
+    margin-right: 10px; /* مساحة بين الأيقونة والنص */
+    transition: transform 0.3s; /* تأثير عند التحويم */
+  }
+  
+  .whatsapp-text {
+    display: none; /* إخفاء النص */
+  }
+  
+  .whatsapp-button:hover {
+    background-color: #128c7e; /* لون عند التحويم */
+  }
+  
+  .whatsapp-button:hover .whatsapp-text {
+    display: block; /* إظهار النص */
+    visibility: visible; /* جعل النص مرئيًا */
+  }
+  
+  .whatsapp-button:hover i {
+    transform: scale(1.2); /* تكبير الأيقونة */
+  }
+  
+  
+  
