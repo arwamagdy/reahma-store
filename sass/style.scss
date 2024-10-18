@@ -2,9 +2,14 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
 }
 
 @import "./nav";
 @import "./main";
 @import "./cards";
 @import "./footer";
+@import "./about";
+@import "./wp-icon";
+@import "./contact";

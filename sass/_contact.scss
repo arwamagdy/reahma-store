@@ -1,0 +1,74 @@
+.contact-section {
+    padding: 50px;
+    background-color: #f0f4f8; /* لون خلفية خفيف */
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    transition: box-shadow 0.3s;
+    text-align: center;
+  
+    &:hover {
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    }
+  
+    h2 {
+      margin-bottom: 30px;
+      color: #004080; /* لون العنوان */
+      font-size: 36px; /* حجم أكبر للعنوان */
+      font-weight: 700; /* وزن خط أكثر سمكًا */
+      text-transform: uppercase; /* جعل العنوان كبير */
+    }
+  
+    p {
+      margin-bottom: 30px;
+      color: #555; /* لون النص العادي */
+      font-size: 16px; /* حجم النص العادي */
+    }
+  
+    form {
+      max-width: 600px;
+      margin: 0 auto;
+  
+      input,
+      textarea {
+        width: 100%;
+        padding: 15px;
+        margin: 10px 0;
+        border: 1px solid #d1d1d1;
+        border-radius: 5px;
+        font-size: 16px;
+        transition: border-color 0.3s;
+  
+        &::placeholder {
+          color: #aaa; /* لون النص في الحقل */
+          font-style: italic; /* جعل النص مائل */
+        }
+  
+        &:focus {
+          border-color: #004080; /* لون الحدود عند التركيز */
+          outline: none; /* إزالة الحدود الافتراضية */
+        }
+      }
+  
+      button {
+        background-color: #004080; /* لون زر */
+        color: white; /* لون النص في الزر */
+        padding: 15px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: background-color 0.3s, transform 0.2s;
+  
+        &:hover {
+          background-color: #003366; /* لون الزر عند التحويم */
+          transform: scale(1.05); /* تأثير التحويم */
+        }
+      }
+    }
+  
+    .icon {
+      font-size: 40px; /* حجم الأيقونة */
+      color: #004080; /* لون الأيقونة */
+      margin: 10px 0; /* مساحة حول الأيقونة */
+    }
+  }
